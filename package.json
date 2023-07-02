@@ -1,0 +1,8 @@
+{
+  "name": "@dw-sn/node-common",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:DimuthuWeerathunga/sn-node-common.git",
+  "author": "Dimuthu Weerathunga <dimu.wa.98@gmail.com>",
+  "license": "MIT"
+}
