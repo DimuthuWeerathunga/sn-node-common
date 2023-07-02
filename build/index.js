@@ -16,5 +16,6 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 // Errors
 __exportStar(require("./errors/database-connection-error"), exports);
+__exportStar(require("./errors/bad-request-error"), exports);
 // Middlewares
 __exportStar(require("./middlewares/error-handler"), exports);
