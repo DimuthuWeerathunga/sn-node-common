@@ -22,3 +22,5 @@ __exportStar(require("./errors/request-validation-error"), exports);
 // Middlewares
 __exportStar(require("./middlewares/error-handler"), exports);
 __exportStar(require("./middlewares/validate-request"), exports);
+// Util
+__exportStar(require("./util/generate-jwt-key"), exports);

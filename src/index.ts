@@ -7,3 +7,6 @@ export * from './errors/request-validation-error';
 // Middlewares
 export * from './middlewares/error-handler';
 export * from './middlewares/validate-request';
+
+// Util
+export * from './util/generate-jwt-key';
