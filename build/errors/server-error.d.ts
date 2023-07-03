@@ -1,5 +1,5 @@
 import { CustomError } from './custom-error';
-export declare class BadRequestError extends CustomError {
+export declare class ServerError extends CustomError {
     statusCode: number;
     constructor();
     serializeErrors(): {

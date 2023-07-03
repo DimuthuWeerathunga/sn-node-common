@@ -19,6 +19,7 @@ __exportStar(require("./errors/database-connection-error"), exports);
 __exportStar(require("./errors/bad-request-error"), exports);
 __exportStar(require("./errors/not-found-error"), exports);
 __exportStar(require("./errors/request-validation-error"), exports);
+__exportStar(require("./errors/server-error"), exports);
 // Middlewares
 __exportStar(require("./middlewares/error-handler"), exports);
 __exportStar(require("./middlewares/validate-request"), exports);
