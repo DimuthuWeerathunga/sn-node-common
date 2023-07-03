@@ -1,1 +1,1 @@
-export declare const getJwtKey: string;
+export declare const getJwtKey: () => string;
