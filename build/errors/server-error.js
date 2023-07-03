@@ -1,15 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ServerError = void 0;
+exports.InternalServerError = void 0;
 const custom_error_1 = require("./custom-error");
-class ServerError extends custom_error_1.CustomError {
+class InternalServerError extends custom_error_1.CustomError {
     constructor() {
         super('Internal server error!');
         this.statusCode = 500;
-        Object.setPrototypeOf(this, ServerError.prototype);
+        Object.setPrototypeOf(this, InternalServerError.prototype);
     }
     serializeErrors() {
         return [{ message: this.message }];
     }
 }
-exports.ServerError = ServerError;
+exports.InternalServerError = InternalServerError;
