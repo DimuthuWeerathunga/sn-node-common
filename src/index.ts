@@ -13,3 +13,4 @@ export * from './middlewares/current-user';
 
 // Util
 export * from './util/generate-jwt-key';
+export * from './util/get-prisma-client';
