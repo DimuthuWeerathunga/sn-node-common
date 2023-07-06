@@ -27,4 +27,3 @@ __exportStar(require("./middlewares/validate-request"), exports);
 __exportStar(require("./middlewares/current-user"), exports);
 // Util
 __exportStar(require("./util/generate-jwt-key"), exports);
-__exportStar(require("./util/get-prisma-client"), exports);
