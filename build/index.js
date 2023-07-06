@@ -25,5 +25,6 @@ __exportStar(require("./errors/unauthorized-error"), exports);
 __exportStar(require("./middlewares/error-handler"), exports);
 __exportStar(require("./middlewares/validate-request"), exports);
 __exportStar(require("./middlewares/current-user"), exports);
+__exportStar(require("./middlewares/require-auth"), exports);
 // Util
 __exportStar(require("./util/generate-jwt-key"), exports);
