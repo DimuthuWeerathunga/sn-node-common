@@ -8,3 +8,4 @@ export * from './middlewares/error-handler';
 export * from './middlewares/validate-request';
 export * from './middlewares/current-user';
 export * from './util/generate-jwt-key';
+export * from './util/get-prisma-client';
