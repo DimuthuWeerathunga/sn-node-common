@@ -28,3 +28,11 @@ __exportStar(require("./middlewares/current-user"), exports);
 __exportStar(require("./middlewares/require-auth"), exports);
 // Util
 __exportStar(require("./util/generate-jwt-key"), exports);
+// events
+__exportStar(require("./events/subjects"), exports);
+__exportStar(require("./events/post-created-event"), exports);
+__exportStar(require("./events/post-liked-event"), exports);
+__exportStar(require("./events/topic-created-event"), exports);
+__exportStar(require("./events/topic-liked-event"), exports);
+__exportStar(require("./events/user-created-event"), exports);
+__exportStar(require("./events/user-followed-user-event"), exports);

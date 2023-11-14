@@ -1,5 +1,5 @@
 import { Subjects } from './subjects';
-export interface PostCreatedEvent {
+export interface TopicCreatedEvent {
     subject: Subjects.TopicCreated;
     data: {
         id: string;
