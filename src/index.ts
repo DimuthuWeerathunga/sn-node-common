@@ -14,3 +14,12 @@ export * from './middlewares/require-auth';
 
 // Util
 export * from './util/generate-jwt-key';
+
+// events
+export * from './events/subjects';
+export * from './events/post-created-event';
+export * from './events/post-liked-event';
+export * from './events/topic-created-event';
+export * from './events/topic-liked-event';
+export * from './events/user-created-event';
+export * from './events/user-followed-user-event';
