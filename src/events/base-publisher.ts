@@ -1,5 +1,6 @@
 import { Channel } from 'amqplib';
 import { Subjects } from './subjects';
+import exchange from './rabbitmq-exchange';
 
 interface Event {
   subject: Subjects;
@@ -9,7 +10,6 @@ interface Event {
 export abstract class Publisher<T extends Event> {
   abstract subject: T['subject'];
   protected channel: Channel;
-  protected exchange = 'sn_event_exchange';
 
   constructor(channel: Channel) {
     this.channel = channel;
@@ -18,9 +18,9 @@ export abstract class Publisher<T extends Event> {
   async publish(data: T['data']): Promise<boolean> {
     const msg = JSON.stringify(data);
 
-    await this.channel.assertExchange(this.exchange, 'direct', {
+    await this.channel.assertExchange(exchange, 'direct', {
       durable: false,
     });
-    return this.channel.publish(this.exchange, this.subject, Buffer.from(msg));
+    return this.channel.publish(exchange, this.subject, Buffer.from(msg));
   }
 }
