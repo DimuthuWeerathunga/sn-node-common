@@ -21,7 +21,7 @@ class Publisher {
             yield this.channel.assertExchange(this.exchange, 'direct', {
                 durable: false,
             });
-            this.channel.publish(this.exchange, this.subject, Buffer.from(msg));
+            return this.channel.publish(this.exchange, this.subject, Buffer.from(msg));
         });
     }
 }

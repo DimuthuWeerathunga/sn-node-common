@@ -15,12 +15,12 @@ export abstract class Publisher<T extends Event> {
     this.channel = channel;
   }
 
-  async publish(data: T['data']): Promise<void> {
+  async publish(data: T['data']): Promise<boolean> {
     const msg = JSON.stringify(data);
 
     await this.channel.assertExchange(this.exchange, 'direct', {
       durable: false,
     });
-    this.channel.publish(this.exchange, this.subject, Buffer.from(msg));
+    return this.channel.publish(this.exchange, this.subject, Buffer.from(msg));
   }
 }

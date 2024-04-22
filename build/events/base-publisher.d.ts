@@ -9,6 +9,6 @@ export declare abstract class Publisher<T extends Event> {
     protected channel: Channel;
     protected exchange: string;
     constructor(channel: Channel);
-    publish(data: T['data']): Promise<void>;
+    publish(data: T['data']): Promise<boolean>;
 }
 export {};
